@@ -21,7 +21,7 @@ else:
             print("starting scan of ip")
         else:
             print("Invalid URL/ IP: ", x)
-            sys.exit
+            sys.exit(0)
 
 for port in range(1,65535):
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
