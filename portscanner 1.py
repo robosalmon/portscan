@@ -31,7 +31,7 @@ with open(file_path, 'w') as fp:
             print("Invalid URL/ IP: ", x)
             fp.write("Invalid URL/ IP: "+"\n")
             fp.write(x+"\n")
-            sys.exit
+            sys.exit(0)
 
     for port in range(1,65535):
             s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
